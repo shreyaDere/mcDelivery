@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mc_replica_app_flutter/constants/colors/colors.dart';
 import 'package:mc_replica_app_flutter/ui/views/splash_screen/splash_screen_view_model.dart';
 import 'package:stacked/stacked.dart';
 
@@ -16,16 +17,11 @@ class SplashScreenView extends StatelessWidget {
             child: Container(
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
-              color: Color(0xFFFFBE02), //.withOpacity(0.9),
+              color: COLOR_PRIMARY,
               child: Stack(
                 children: [
                   Center(
-                    child:
-                        // Icon(
-                        //   Icons.shopping_bag_sharp,
-                        //   size: 100,
-                        // ),
-                        Image.asset(
+                    child: Image.asset(
                       "assets/images/mc.jpg",
                       height: 200,
                     ),
